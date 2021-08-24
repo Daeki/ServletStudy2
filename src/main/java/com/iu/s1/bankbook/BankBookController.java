@@ -32,6 +32,7 @@ public class BankBookController {
 				System.out.println(bankBookDTO.getBookName());
 			}
 			
+			request.setAttribute("list", ar);
 			RequestDispatcher view = request.getRequestDispatcher("../WEB-INF/views/bankbook/bankbookList.jsp");
 			try {
 				view.forward(request, response);
@@ -44,14 +45,16 @@ public class BankBookController {
 			System.out.println("상품등록");
 		}else if(path.equals("bankbookSelect.do")) {
 			System.out.println("상품상세조회");
-//			String num = request.getParameter("bookNumber");
-//			long num2 = Long.parseLong(num);
-//			System.out.println("Num2 : "+num2);
+			String num = request.getParameter("bookNumber");
+			long num2 = Long.parseLong(num);
+			System.out.println("Num2 : "+num2);
 			
 			BankBookDTO bankBookDTO = new BankBookDTO();
-			bankBookDTO.setBookNumber(1);
+			bankBookDTO.setBookNumber(num2);
 			bankBookDTO = bankBookDAO.getSelect(bankBookDTO);
 			System.out.println(bankBookDTO.getBookName());
+			
+			request.setAttribute("dto", bankBookDTO);
 			
 			RequestDispatcher view = request.getRequestDispatcher("../WEB-INF/views/bankbook/bankbookSelect.jsp");
 			try {
