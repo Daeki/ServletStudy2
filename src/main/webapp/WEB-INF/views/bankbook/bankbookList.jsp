@@ -10,14 +10,22 @@
 </head>
 <body>
 	<h1>Bankbook List Page</h1>
+	
+	<table>
+		<tr>
+			<th>일련번호</th><th>제품명</th><th>이자율</th>
+		</tr>
 	<%
 		Object obj = request.getAttribute("list");
 		ArrayList<BankBookDTO> ar = (ArrayList<BankBookDTO>)obj;
 		for(BankBookDTO dto:ar){
 	%>
-		<h2>Name : <a href="./bankbookSelect.do?bookNumber=<%= dto.getBookNumber()%>"><%=dto.getBookName() %></a></h2>
-		<h2>Rate : <%=dto.getBookRate() %></h2>
-			
+		<tr>
+			<td><%= dto.getBookNumber() %></td>
+			<td><a href="./bankbookSelect.do?bookNumber=<%= dto.getBookNumber()%>"><%=dto.getBookName() %></a></td>
+			<td><%=dto.getBookRate() %></td>
+		</tr>			
 	<%}%>
+	</table>
 </body>
 </html>
