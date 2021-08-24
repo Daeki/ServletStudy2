@@ -15,7 +15,7 @@
 		ArrayList<BankBookDTO> ar = (ArrayList<BankBookDTO>)obj;
 		for(BankBookDTO dto:ar){
 	%>
-		<h2>Name : <%=dto.getBookName() %></h2>
+		<h2>Name : <a href="./bankbookSelect.do?bookNumber=<%= dto.getBookNumber()%>"><%=dto.getBookName() %></a></h2>
 		<h2>Rate : <%=dto.getBookRate() %></h2>
 			
 	<%}%>
