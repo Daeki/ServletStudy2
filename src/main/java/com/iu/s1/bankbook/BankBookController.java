@@ -47,14 +47,27 @@ public class BankBookController {
 			String method = request.getMethod();
 			System.out.println("Method : "+method);
 			if(method.equals("POST")) {
-				System.out.println("insert2");
 				//파라미터값 출력
 				String bookName = request.getParameter("bookName");
 				String bookRate = request.getParameter("bookRate");
 				String bookSale = request.getParameter("bookSale");
-				System.out.println("BookName : "+bookName);
-				System.out.println("BookRate : "+bookRate);
-				System.out.println("BookSale : "+bookSale);
+				BankBookDTO bankBookDTO = new BankBookDTO();
+				bankBookDTO.setBookName(bookName);
+				bankBookDTO.setBookRate(Double.parseDouble(bookRate));
+				bankBookDTO.setBookSale(Integer.parseInt(bookSale));
+				
+				int result = bankBookDAO.setInsert(bankBookDTO);
+				System.out.println(result);
+				
+//				ArrayList<BankBookDTO> ar = bankBookDAO.getList();
+//				request.setAttribute("list", ar);
+				try {
+					response.sendRedirect("./bankbookList.do");
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
 				
 			}else {
 				
