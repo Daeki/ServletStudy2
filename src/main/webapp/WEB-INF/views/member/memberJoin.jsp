@@ -10,11 +10,11 @@
 	<h1>Member Join Page</h1>
 	
 	<form action="./memberJoin.do" method="post">
-		ID : <input type="text"><br>
-		PW : <input type="password"><br>
-		Name : <input type="text"><br>
-		Phone : <input type="tel"><br>
-		Email : <input type="email"><br>
+		ID : <input type="text" name="id"><br>
+		PW : <input type="password" name="pw"><br>
+		Name : <input type="text" name="name"><br>
+		Phone : <input type="tel" name="phone"><br>
+		Email : <input type="email" name="email"><br>
 		<button>JOIN</button>
 	</form>
 	
