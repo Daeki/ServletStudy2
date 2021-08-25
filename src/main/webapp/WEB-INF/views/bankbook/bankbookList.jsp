@@ -23,9 +23,12 @@
 		<tr>
 			<td><%= dto.getBookNumber() %></td>
 			<td><a href="./bankbookSelect.do?bookNumber=<%= dto.getBookNumber()%>"><%=dto.getBookName() %></a></td>
-			<td><%=dto.getBookRate() %></td>
+			<td><%= dto.getBookRate() %></td>
 		</tr>			
 	<%}%>
 	</table>
+	
+	<a href="bankbookInsert.do">WRITE</a>
+	
 </body>
 </html>

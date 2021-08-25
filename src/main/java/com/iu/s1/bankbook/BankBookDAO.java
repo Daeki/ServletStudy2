@@ -16,6 +16,10 @@ public class BankBookDAO {
 		dbConnector = new DBConnector();
 	}
 	
+	//setInsert
+	
+	
+	
 	//getList
 	public ArrayList<BankBookDTO> getList() {
 		Connection con = dbConnector.getConnect();
