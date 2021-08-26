@@ -15,6 +15,7 @@ public class MemberDAO {
 	
 	public int memberJoin(MemberDTO memberDTO) throws Exception {
 		Connection con = dbConnector.getConnect();
+
 		PreparedStatement st = null;
 		int result=0;
 		
@@ -27,7 +28,8 @@ public class MemberDAO {
 		st.setString(5, memberDTO.getEmail());
 			
 		result = st.executeUpdate();
-			
+		
+
 		
 		dbConnector.disConnect(st, con);
 		
