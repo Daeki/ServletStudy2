@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+#title {
+	color: red;
+}
+
+.c1 {
+	border: red 2px solid; 
+	width: 300px;
+	height: 300px;
+
+/* 	
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+*/
+	box-sizing: border-box;
+	padding: 100px;
+
+}
+
+.c1_1 {
+	border: gray 2px solid; 
+
+	width: 100px;
+	height: 100px;
+}
+
+.c2 {
+	border: blue 2px solid;
+/*
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding: 20px 20px 20px 20px;
+	padding : 20px 30px;
+*/
+	padding: 40px;
+		
+
+}
+
+
+
+
+

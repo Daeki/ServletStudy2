@@ -16,7 +16,7 @@
 </head>
 <body>
 	
-	<h1>Bankbook List Page BY JSTL</h1>
+	<h1 id="title">Bankbook List Page BY JSTL3</h1>
 	<table class="tbl">
 		<tr>
 			<th class="tbl_tr">일련번호</th><th class="tbl_tr">제품명</th><th class="tbl_tr">이자율</th><th class="tbl_tr">Status</th>

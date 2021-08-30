@@ -1,0 +1,33 @@
+@charset "UTF-8";
+#title {
+	color:  red;
+}
+.c1 {
+	width: 200px;
+	height: 200px;
+}
+
+.c1_1 {
+	background-color: red;
+	margin: 100px auto;
+
+	overflow: hidden;
+}
+.c1_2 {
+	background-color: gray;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.cs1 {
+	background-color: blue;
+	margin: 0 auto;
+}
+
+.c2 {
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+	margin-left: 50px;
+	margin-top: 50px; 
+}

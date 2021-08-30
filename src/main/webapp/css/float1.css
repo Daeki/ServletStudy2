@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+
+img {
+	
+	float: right;
+}
+
+.c1 {
+	width: 200px;
+	height: 200px;
+}
+
+.c1_1 {
+	background-color: red;
+}
+.c1_2 {
+	background-color: blue;
+	float: right;
+	margin-left: 50px;
+}
+.c1_3 {
+	background-color: yellow;
+	float: left;
+}
+.c1_4 {
+	background-color: black;
+	clear: both;
+}

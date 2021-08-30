@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+#title {
+	
+	color:  red;
+}
+
+.c1 {
+	width: 200px;
+	height: 200px;
+}
+
+.c1_1 {
+	background-color: red;
+	display: inline-block;
+}
+.c1_2 {
+	background-color: gray;
+	display: inline-block;
+	
+}
+.c1_3 {
+	background-color: blue;
+}
+
+span {
+	border: 1px solid red;
+}
+.cs1 {
+	display: block;
+}

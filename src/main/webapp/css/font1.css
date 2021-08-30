@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.c1 {
+	font-size: 2em;
+	font-family:  "Times New Roman", Times, serif;
+	 
+}
+
+.c1_1 {
+	font-size: 2em;
+}
+
+.c2 {
+	font-size: 2rem;
+	font-family: "ZCOOL KuaiLe";
+}
+.c2_1 {
+	font-size: 2rem;
+}
